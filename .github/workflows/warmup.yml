@@ -2,7 +2,7 @@ name: Claude Code Warmup
 
 on:
   schedule:
-    - cron: ${{ vars.WARMUP_CRON || '15 9 * * 1-5' }}
+    - cron: '15 9 * * 1-5'  # weekdays 9:15 UTC — change to suit your timezone
   workflow_dispatch: {}
 
 jobs:
